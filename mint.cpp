@@ -1,4 +1,5 @@
-// mod int
+// Modular Integer
+// does arithematics (mod P) automatically
 int P = 998244353; // 1000000007
 struct mint {
   int x;

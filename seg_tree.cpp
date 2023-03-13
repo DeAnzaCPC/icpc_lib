@@ -1,8 +1,10 @@
-// min query
+// Segment Tree for min query
 struct SegTree {
   int n;
   vector<int> t;
   SegTree(int n) : n(n), t(4*n, inf) {}
+
+  // build segment tree from static data
   void build(const vector<int>& A, int v=1, int tl=0, int tr=-1) {
     if (tr == -1) tr = n-1;
     if (tl == tr) {
@@ -15,6 +17,7 @@ struct SegTree {
     }
   }
 
+  // query the combinded value on [l,r]
   int query(int l, int r, int v=1, int tl=0, int tr=-1) {
     if (tr == -1) tr = n-1;
     if (l > r) return inf;
@@ -27,6 +30,7 @@ struct SegTree {
     return min(x,y);
   }
 
+  // update the node at pos
   void update(int pos, int val, int v=1, int tl=0, int tr=-1) {
     if (tr == -1) tr = n-1;
     if (tl == tr) {

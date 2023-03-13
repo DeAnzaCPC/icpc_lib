@@ -1,3 +1,4 @@
+// Fenwick Tree for summation
 struct FenwickTree {
   int n;
   vector<ll> bits;
