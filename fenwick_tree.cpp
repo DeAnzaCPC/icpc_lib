@@ -16,4 +16,13 @@ struct FenwickTree {
   ll query(int l, int r) {
     return query(r) - query(l-1);
   }
+  int lower_bound(ll sum) {
+    int pos = 0;
+    for (int pw = 1<<30; pw; pw >>= 1) {
+      if ((pos+pw) <= n && sum >= bits[pos+pw]) {
+        sum -= bits[pos+pw], pos += pw;
+      }
+    }
+    return pos;
+  }
 };

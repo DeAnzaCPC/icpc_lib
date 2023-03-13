@@ -5,11 +5,9 @@ using ll = long long;
 void solve() {
 }
 
-int main() {
+int32_t main() {
   cin.sync_with_stdio(false);
   cin.tie(nullptr);
 
   solve();
-
-  return 0;
 }
