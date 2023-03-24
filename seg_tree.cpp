@@ -1,8 +1,8 @@
 // Segment Tree for min query
-struct SegTree {
+struct seg_tree {
   int n;
   vector<int> t;
-  SegTree(int n) : n(n), t(4*n, inf) {}
+  seg_tree(int n) : n(n), t(4*n, inf) {}
 
   // build segment tree from static data
   void build(const vector<int>& A, int v=1, int tl=0, int tr=-1) {

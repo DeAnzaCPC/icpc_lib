@@ -1,9 +1,9 @@
 // Union Find using disjoint subset union
-struct UnionFind {
+struct union_find {
   int n;
   vector<int> p;
   vector<int> sz;
-  UnionFind(int n) : n(n), p(n), sz(n, 1) {
+  union_find(int n) : n(n), p(n), sz(n, 1) {
     iota(begin(p),end(p), 0);
   }
   

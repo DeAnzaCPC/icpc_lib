@@ -8,4 +8,5 @@ freopen("output.txt", "w", stdout);
 #include <ext/pb_ds/assoc_container.hpp>
 using namespace __gnu_pbds;
 
-typedef tree<int,null_type,less<int>,rb_tree_tag, tree_order_statistics_node_update> indexed_set;
+template<typename T>
+using indexed_set = tree<T,null_type,less<T>,rb_tree_tag, tree_order_statistics_node_update>;
