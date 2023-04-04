@@ -2,12 +2,6 @@
 using namespace std;
 using ll = long long;
 
-void solve() {
-}
-
-int32_t main() {
-  cin.sync_with_stdio(false);
-  cin.tie(nullptr);
-
-  solve();
+int main() {
+  cin.tie(nullptr)->sync_with_stdio(false);
 }
